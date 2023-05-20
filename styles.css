@@ -12,7 +12,22 @@ body {
     border-radius: 5px;
 }
 
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
 h1 {
     font-family: 'Karla', sans-serif;
     width: 354px;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 1;
+    letter-spacing: -1px;
+    margin: 115px 0px 0px 52px;
+
+}
+
+.green-text {
+    color: #10B981;
 }
