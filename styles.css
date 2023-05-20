@@ -15,6 +15,7 @@ body {
 .content {
     display: flex;
     flex-direction: column;
+    margin-left: 52px;
 }
 
 h1 {
@@ -24,10 +25,18 @@ h1 {
     font-size: 40px;
     line-height: 1;
     letter-spacing: -1px;
-    margin: 115px 0px 0px 52px;
+    margin-top: 115px;
+    margin-bottom: 0px;
 
 }
 
 .green-text {
     color: #10B981;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: normal;
+    color: #6B7280;
+    letter-spacing: -.5px;
 }
