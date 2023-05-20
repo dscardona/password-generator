@@ -40,3 +40,14 @@ h2 {
     color: #6B7280;
     letter-spacing: -.5px;
 }
+
+button {
+    background-color: #10B981;
+    color: white;
+    height: 42px;
+    width: 191px;
+    border-radius: 6px;
+    border: none;
+    margin-top: 30px;
+    font-size: 16px;
+}
