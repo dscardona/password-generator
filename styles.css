@@ -45,8 +45,8 @@ h2 {
 button {
     background-color: #1051b9;
     color: white;
-    height: 42px;
-    width: 191px;
+    height: 50px;
+    width: 200px;
     border-radius: 6px;
     border: none;
     margin-top: 30px;
@@ -71,4 +71,9 @@ button {
     margin-right: 15px;
     display: inline-block;
     color: #c7d7f5;
+}
+
+img:hover {
+    height: 28px;
+    width: 28px;
 }
