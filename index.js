@@ -5,6 +5,12 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"
 function generatePw() {
     let pw1 = document.getElementById("pw1")
     let pw2 = document.getElementById("pw2")
+
+    if (pw1.textContent.length >= 15) {
+        pw1.textContent = ""
+        pw2.textContent = ""
+    }
+
     for (i= 0 ; i < 15 ; i++) {
         let randomIndex1 = Math.floor(Math.random() * characters.length)
         console.log(`This is index ${randomIndex1}`)
@@ -13,4 +19,5 @@ function generatePw() {
         pw1.textContent += characters[randomIndex1]
         pw2.textContent += characters[randomIndex2]
     }
+
 }
