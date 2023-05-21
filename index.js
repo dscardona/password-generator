@@ -2,10 +2,10 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"
 "/"];
 
 
+
 function generatePw() {
     let pw1 = document.getElementById("pw1")
     let pw2 = document.getElementById("pw2")
-
     if (pw1.textContent.length >= 15) {
         pw1.textContent = ""
         pw2.textContent = ""
@@ -21,3 +21,16 @@ function generatePw() {
     }
 
 }
+
+function copyPw1() {
+    let pw1 = document.getElementById("pw1")
+    let pw1Value = pw1.textContent
+    navigator.clipboard.writeText(pw1Value)
+}
+
+function copyPw() {
+    let pw2 = document.getElementById("pw2")
+    let pw2Value = pw2.textContent
+    navigator.clipboard.writeText(pw2Value)
+}
+
