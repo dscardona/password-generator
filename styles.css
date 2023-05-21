@@ -7,7 +7,7 @@ body {
 .main-container {
     height: 550px;
     width: 550px;
-    background-color: #ECFDF5;
+    background-color: #edecfd;
     margin: 30px auto;
     border-radius: 5px;
 }
@@ -15,7 +15,6 @@ body {
 .content {
     display: flex;
     flex-direction: column;
-    margin-left: 52px;
 }
 
 h1 {
@@ -25,13 +24,14 @@ h1 {
     font-size: 40px;
     line-height: 1;
     letter-spacing: -1px;
-    margin-top: 115px;
+    margin-top: 90px;
     margin-bottom: 0px;
+    margin-left: 52px;
 
 }
 
 .green-text {
-    color: #10B981;
+    color: #1051b9;
 }
 
 h2 {
@@ -39,10 +39,11 @@ h2 {
     font-weight: normal;
     color: #6B7280;
     letter-spacing: -.5px;
+    margin-left: 52px;
 }
 
 button {
-    background-color: #10B981;
+    background-color: #1051b9;
     color: white;
     height: 42px;
     width: 191px;
@@ -50,6 +51,7 @@ button {
     border: none;
     margin-top: 30px;
     font-size: 16px;
+    margin-left: 52px;
 }
 
 .horizontal-ruler {
@@ -57,15 +59,16 @@ button {
     border: 1px solid #D5D4D8;
     width: 446px;
     margin-top: 35px;
+    margin-left: 52px;
 }
 
 .pw-field {
     height: 39px;
-    width: 211px;
+    width: 200px;
     background: #273549;
     border-radius: 6px;
     margin-top: 35px;
     margin-right: 15px;
     display: inline-block;
-    color: #5DEF92;
+    color: #c7d7f5;
 }
