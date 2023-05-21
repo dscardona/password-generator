@@ -6,18 +6,34 @@ function generatePw() {
     let pw1 = document.getElementById("pw1")
     let pw2 = document.getElementById("pw2")
 
-    if (pw1.textContent.length >= 15) {
-        pw1.textContent = ""
-        pw2.textContent = ""
-    }
+    // if (pw1.textContent.length >= 15) {
+    //     pw1.textContent = ""
+    //     pw2.textContent = ""
+    // }
 
     for (i= 0 ; i < 15 ; i++) {
         let randomIndex1 = Math.floor(Math.random() * characters.length)
-        console.log(`This is index ${randomIndex1}`)
         let randomIndex2 = Math.floor(Math.random() * characters.length)
-        console.log(randomIndex2)
-        pw1.textContent += characters[randomIndex1]
+        pw1.value += characters[randomIndex1]
         pw2.textContent += characters[randomIndex2]
     }
 
 }
+
+function copyToClipboard() {
+    let copyPw = document.getElementById("pw1");
+    // copyPw.focus();
+    copyPw.select();
+    copyPw.setSelectionRange(0, 99999);
+    navigator.clipboard.writeText(copyPw.value)
+
+    alert("copied");
+}
+
+
+// function copy() {
+//     let copyText = document.querySelector("#input");
+//     copyText.select();
+//     document.execCommand("copy");
+//   }
+//   document.querySelector("#copy").addEventListener("click", copy);
