@@ -22,18 +22,16 @@ function generatePw() {
 
 function copyToClipboard() {
     let copyPw = document.getElementById("pw1");
-    // copyPw.focus();
+    copyPw.focus();
     copyPw.select();
     copyPw.setSelectionRange(0, 99999);
-    navigator.clipboard.writeText(copyPw.value)
+    navigator.clipboard.writeText(copyPw.value).then(function() {
+        console.log('Async: Copying to clipboard was successful!');
+      }, function(err) {
+        console.error('Async: Could not copy text: ', err);
+      });
 
-    alert("copied");
+    alert("copied: " + copyPw.value);
 }
 
-
-// function copy() {
-//     let copyText = document.querySelector("#input");
-//     copyText.select();
-//     document.execCommand("copy");
-//   }
-//   document.querySelector("#copy").addEventListener("click", copy);
+ 
