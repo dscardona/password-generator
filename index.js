@@ -6,11 +6,6 @@ function generatePw() {
     let pw1 = document.getElementById("pw1")
     let pw2 = document.getElementById("pw2")
 
-    let copiedEL1 = document.getElementById("copied-el-1")
-    copiedEL1.textContent = ""
-    let copiedEL2 = document.getElementById("copied-el-2")
-    copiedEL2.textContent = ""
-
     if (pw1.textContent.length >= 15) {
         pw1.textContent = ""
         pw2.textContent = ""
@@ -31,14 +26,18 @@ function copyPw1() {
     let pw1Value = pw1.textContent
     navigator.clipboard.writeText(pw1Value)
 
-    let copiedEL1 = document.getElementById("copied-el-1")
-    copiedEL1.textContent = "copied!"
+    let x = document.getElementById("snackbar");
+    x.className = "show";
+    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 500);
+
 }
 
 function copyPw2() {
     let pw2Value = pw2.textContent
     navigator.clipboard.writeText(pw2Value)
 
-    let copiedEL2 = document.getElementById("copied-el-2")
-    copiedEL2.textContent = "copied!"
+    let x = document.getElementById("snackbar");
+    x.className = "show";
+    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 500);
+
 }
